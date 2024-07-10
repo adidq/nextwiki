@@ -12,7 +12,6 @@ export default async function Wiki({ params }: { params: { id: string } }) {
     return(
         <article>
             {namespace === '문서' ? <p>{name}</p> : <p>{namespace}: {name}</p>}
-            <Link href={`/edit/${id}`}>편집</Link>
         </article>
     )
 }
